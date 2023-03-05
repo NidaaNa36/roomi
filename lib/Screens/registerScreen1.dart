@@ -2,15 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_application_1/Screens/registerScreen2.dart';
 
-class LoginScreen2 extends StatefulWidget {
-  const LoginScreen2({super.key});
+class RegisterScreen1 extends StatefulWidget {
+  const RegisterScreen1({super.key});
 
   @override
-  State<LoginScreen2> createState() => _LoginScreen2State();
+  State<RegisterScreen1> createState() => _RegisterScreen1State();
 }
 
-class _LoginScreen2State extends State<LoginScreen2> {
+class _RegisterScreen1State extends State<RegisterScreen1> {
   var size, height, width;
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,13 @@ class _LoginScreen2State extends State<LoginScreen2> {
                 width: width / 2,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const RegisterScreen2()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   foregroundColor: const Color(0xFF1C96E8),
                 ),
@@ -70,7 +77,13 @@ class _LoginScreen2State extends State<LoginScreen2> {
                 width: width / 2,
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const RegisterScreen2()),
+                  );
+                },
                 style: TextButton.styleFrom(
                   foregroundColor: const Color(0xFF1C96E8),
                 ),

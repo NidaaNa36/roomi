@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/Screens/loginScreen2.dart';
+import 'package:flutter_application_1/Screens/registerScreen1.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -60,13 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
               width: width / 1.5,
               height: height / 15,
               child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const LoginScreen2()),
-                  );
-                },
+                onPressed: () {},
                 style: ElevatedButton.styleFrom(primary: Color(0xFF1C96E8)),
                 child: const Text(
                   "تسجيل الدخول",
@@ -108,7 +102,13 @@ class _LoginScreenState extends State<LoginScreen> {
               width: width / 1.5,
               height: height / 15,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const RegisterScreen1()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(primary: Color(0xFF1C96E8)),
                 child: const Text(
                   "انشاء حساب جديد",
