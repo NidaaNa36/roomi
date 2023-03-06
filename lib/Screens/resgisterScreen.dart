@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/Screens/OwnerScreen.dart';
 import 'package:flutter_application_1/Screens/registerScreen1.dart';
 
 import 'StudentScreen.dart';
@@ -8,14 +9,14 @@ const List<String> list = <String>[
   'ذكر',
 ];
 
-class RegisterScreen2 extends StatefulWidget {
-  const RegisterScreen2({super.key});
+class RegisterScreen22 extends StatefulWidget {
+  const RegisterScreen22({super.key});
 
   @override
-  State<RegisterScreen2> createState() => _RegisterScreen2State();
+  State<RegisterScreen22> createState() => _RegisterScreen22State();
 }
 
-class _RegisterScreen2State extends State<RegisterScreen2> {
+class _RegisterScreen22State extends State<RegisterScreen22> {
   TextEditingController dateinput = TextEditingController();
   DateTime datetime = DateTime.now();
   var size, height, width;
@@ -204,7 +205,7 @@ class _RegisterScreen2State extends State<RegisterScreen2> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const StudentScreen()),
+                        builder: (context) => const OwnerScreen()),
                   );
                 },
                 style: ElevatedButton.styleFrom(primary: Color(0xFF1C96E8)),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/Screens/registerScreen2.dart';
+import 'package:flutter_application_1/Screens/resgisterScreen.dart';
 
 class RegisterScreen1 extends StatefulWidget {
   const RegisterScreen1({super.key});
@@ -81,7 +82,7 @@ class _RegisterScreen1State extends State<RegisterScreen1> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const RegisterScreen2()),
+                        builder: (context) => const RegisterScreen22()),
                   );
                 },
                 style: TextButton.styleFrom(
